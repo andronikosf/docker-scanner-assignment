@@ -11,7 +11,7 @@ on:
         docker_image:
           description: 'The Docker image to scan'
           required: true
-          default: 'ghcr.io/${{ github.repository }}:latest'
+          default: ghcr.io/andronikosf/docker-scanner-assignment:latest
 
 # env:
 #   REGISTRY: ghcr.io
