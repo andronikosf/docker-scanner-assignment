@@ -3,12 +3,15 @@
 name: SBOM/SCA Scout
 
 on:
+  # push:
+  #   branches:
+  #     - main
   workflow_dispatch:
     inputs:
         docker_image:
           description: 'The Docker image to scan'
           required: true
-          default: 'ghcr.io/ethan42/sbom-sca-scanner:latest'
+          default: 'ghcr.io/${{ github.repository }}:latest'
 
 # env:
 #   REGISTRY: ghcr.io
